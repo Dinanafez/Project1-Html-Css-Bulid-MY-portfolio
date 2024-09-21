@@ -1,0 +1,456 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: rgb(199,54,113);
+    background: linear-gradient(90deg, rgba(199,54,113,0.6532738095238095) 64%, rgba(217,171,171,1) 100%);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    height: 40px;
+}
+.head-cont{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 100%;
+    background-color:transparent;
+   
+   
+    transition: all .45s ease;
+    
+
+}
+.logo{
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    justify-content: flex-start;
+    letter-spacing: 2px;
+    display: inline-flex;
+
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: flex-end;
+}
+.nav-list ul{
+    list-style: none;
+    color: aliceblue;
+    display: inline-flex;
+    justify-content: flex-end;
+    /* margin: auto; */
+}
+.nav-list ul li{
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 700;
+}
+.nav-list ul li a:hover{
+   border-bottom: 2px solid #921A40;
+    background-color: rgba(146, 26, 64, 0.416);
+    border-radius: 3px;
+
+}
+section{
+    /* padding: 160px 15% 120px; */
+    width: 100%;
+    height: 100vh;
+}
+ .home{
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ background-image: url(asstes/home.jpg);
+ background-size: cover;
+ background-position: center;
+ align-items: center;
+ justify-content: flex-start;
+}
+.slide{
+    margin-bottom: 20px;
+    color: aliceblue;
+   
+}
+.one{
+     display: inline-block;
+     /* margin-right: 10px; */
+     padding: 0 15px;
+     line-height: 1em;
+     font-size: 2rem;
+     font-weight: 500;
+     /* background-color: ; */
+     color: aliceblue;
+     justify-content: start;
+}
+.two{
+    display: inline-block;
+   font-weight: 500;
+   font-size: 1.5em;
+}
+.home__text h1{
+ font-size: 3rem;
+ font-weight: 700;
+ color: white;
+ line-height: 1.1;
+ margin: 0 0 8px;
+}
+.home__text h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+    margin: 0 0 35px;
+   }
+   .home__text h3 span{
+    color: aqua;
+   }
+   .home__text p{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 48px;
+   } 
+    .about{
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 1.5rem;
+        background-image: url(asstes/about2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .about-img img{
+        width:530px;
+        height: 40vh;
+        width: 100%;
+        border-radius:5px ;
+    }
+    .about-text h2{
+        font-size:3rem;
+        line-height: 1;
+        text-align: center;
+       color:#63c8c4 ; 
+
+    }
+    .about-text h4{
+        font-size:24px;
+        line-height: 1;
+        font-weight: 600;
+        color:white;
+        line-height: 1.7;
+        text-align: center;
+        margin: 15px 0 30px;
+
+
+    }
+    .about-text p{
+        font-size:1.25rem;
+        line-height: 1;
+        font-weight: 600;
+        color:white;
+        line-height: 1.8;
+        text-align: center;
+        margin:4rem ;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .services{
+        background: rgb(250,207,217);
+        background: linear-gradient(90deg, rgba(250,207,217,1) 0%, rgba(17,215,216,1) 52%, rgba(253,154,182,1) 100%);
+
+    }
+    .main-text{
+        text-align: center;
+    }
+    .main-text p{
+        color: aquamarine;
+        font-size: 15px;
+        margin-bottom:15px ;
+    }
+    .main-text h2{
+        font-size:3rem ;
+        line-height: 1;
+    }
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px ,auto));
+        align-items: center;
+        gap: 2.5rem;
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 4rem;
+
+    }
+    .box{
+        background-color: #63c8c4;
+        padding: 35px 45px ;
+        border-radius: 8px;
+        transition: all .45s ease;
+    }
+    .s-icons i{
+        font: .5rem;
+        margin-bottom: 20px;
+        color: #fd9ab6;
+        width: px;
+
+    }
+   .box h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+   }
+.box p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.contact{
+    /* background-color: #921A40; */
+    background-image: url(asstes/contact.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.contact-text h4{
+ color: white;
+ margin: 18px 0;
+ font-size:20px ;
+ font-weight: 600;
+}
+.contact-text h2{
+    font-size:3rem ;
+    line-height: 1;
+    color: white;
+}
+.contact-text p{
+    color:white;
+    font-size:1.1rem ;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.list{
+    margin-bottom: 2.8rem;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: aqua;
+    font-size: 14px;
+    transition: all .45s ease;
+}
+.list li a:hover{
+    color: white;
+    transform: translateY(5px);
+}
+.contact-icons i{
+height: 45px;
+width: 45px;
+/* background-color: #921A40; */
+color: white;
+font-size: 22px;
+display: inline-block;
+justify-content: center;
+border-radius:8px ;
+margin-right: 15px;
+transition: all .45s ease;
+}
+.contact-icons i:hover{
+  /* background-color: white; */
+  color: #63c8c4;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,form textarea{
+ width:500px;
+ padding: 14px;
+ /* background-color:#AAE2DF; */
+ background-color: aliceblue;
+ color: white;
+ border: none;
+ outline: none;
+ font-size: 15px;
+ border-radius: 8px;
+ margin-bottom: 10px;
+ display: block;
+}
+.contact-form textarea{
+    resize:none;
+    height: 240px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size:16px ;
+    background-color:#fd9ab6;
+    color: white;
+    width: 400px;
+    transition: all .45s ease;
+    align-items: center;
+}
+.contact-form .submit:hover{
+transform: scale(1.1);
+cursor: pointer;
+}
+.high{
+    display:grid ;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    background-image: url(asstes/strong.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.high-text h4{
+    font-size:4rem;
+    line-height: 1;
+    font-weight: 600;
+    color:white;
+    line-height: 1.7;
+    text-align: center;
+    margin: 15px 0 30px;
+}
+.high-text p{
+    font-size:2rem;
+    line-height: 1;
+    font-weight: 600;
+    color:white;
+    line-height: 1.7;
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+.footer{
+    padding:20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem ;
+    width: 100%;
+    height: 50px;
+
+}
+.last-text p{
+ color: white;
+ font-size: 20px;
+}
+.top i{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: white;
+    background-color: #921A40;
+}
+.neon{
+    text-shadow: -2px -2px 10px white,
+                 2px 2px 10px #a42247,
+                 0    0  20px #a42247,
+                 0    0  40px  #a42247,
+                 0    0  60px  #a42247,
+                 0    0  80px  #a42247,
+                 0    0  100px	#a42247;
+
+
+}
+.neon2{
+    text-shadow: -2px -2px 10px white,
+                 2px 2px 10px  #137875,
+                 0    0  20px #137875,
+                 0    0  40px   #137875,
+                 0    0  60px  #137875,
+                 0    0  80px  #137875,
+                 0    0  100px	#137875;
+
+
+}
+@media(max-width:1488px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .end{
+        padding: 15px 3%;
+    }
+}
+@media (max-width:1100px) {
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
+    }
+}
+@media (max-width:920px) {
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:480px) {
+    #menu-icon{
+        display: block;
+    }
+    .nav-list{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #921A40;
+        text-align: left;
+        transition: all .45s ease;
+
+    }
+    .nav-list a{
+        display: block;
+        margin: 17px;
+        font-size: 12px;
+        transition: all .45s ease;
+        color: aquamarine;
+    }
+}
